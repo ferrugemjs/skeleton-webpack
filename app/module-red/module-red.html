@@ -1,0 +1,40 @@
+<template no-view-model="true">
+	<style>
+		.module-red{
+			width:100px;
+			height:100px;
+			display:block;
+			border:4px dotted gray;	
+			border-radius:10px;
+			text-align:center;
+			line-height:1.8;		
+		}
+		.module-red > div{
+			width:100%;
+			height:20%;
+			float:left;
+		}
+		.module-red > div.esp1{
+			background-color:green;
+		}
+		.module-red > div.esp2{
+			background-color:red;
+		}
+		.module-red > div.esp3{
+			background-color:blue;
+		}
+	</style>
+	<div class="module-red">
+		<h4>${this.name}</h4>
+		<input keyup.bind="this.name" style="width:100%" />
+		<if condition="this.name === 'esp1'">
+			<div class="${this.name}">${this.name}</div>
+		<elseif condition="this.name === 'esp2'">
+			<div class="${this.name}">${this.name}</div>
+		</elseif>	
+		<else>
+			<div class="${'esp3'}">${this.name}</div>
+		</else>			
+		</if>
+	</div>
+</template>
