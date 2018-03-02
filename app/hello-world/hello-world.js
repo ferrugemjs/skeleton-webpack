@@ -1,10 +1,10 @@
-import pugtest from "./test-a.pug";
-
-export class HelloWorld{
-	constructor(){
-		this.name = "FerrugemJS"
-	}
-	connectedCallback(){
-		console.log(pugtest);
-	}
+export class TodoList{  
+  constructor(){
+    this.todos = ['do a test'];
+  }
+  set desc(desc){
+    if(desc.trim()){
+      this.todos.push(desc);
+    }
+  }
 }

@@ -1,18 +1,9 @@
 template
-	require(from="./sec-b")
-	style.
-		.hello-world{
-			width:200px;
-			height:100px;
-			display:block;
-			border:4px dotted gray;	
-			border-radius:10px;
-			text-align:center;
-			line-height:1.8;
-			margin:0px auto;
-			margin-top:18%;		
-		}
-	.hello-world
-		h4 ${this.name}
-		sec-b
-		#{'b'} ops
+  div
+    ol
+      li(each="todo in this.todos")
+        em ${todo}
+    input( 
+      type="text", 
+      value="${new String('')}", 
+      change.bind="this.desc")

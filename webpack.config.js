@@ -1,6 +1,8 @@
 var path = require('path');
 module.exports = {
-    entry: './app/app.js',
+    entry: {    
+    	app:['ferrugemjs/bootstrapper']
+    },
     output: {
         path: __dirname+'/public', 
         filename: 'bundle.js'
@@ -20,7 +22,14 @@ module.exports = {
 					presets: ['es2015']
 				}
 			}
-			,{ test: /\.css$/, loader: "style!css" }
+			,{
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader']
+            }
+            ,{
+                test: /\.scss$/,
+                use: [ 'style-loader', 'css-loader', 'sass-loader']
+            }
 			,{
         		test: /\.pug$/,
         		loaders: [

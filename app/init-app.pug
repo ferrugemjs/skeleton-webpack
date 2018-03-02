@@ -1,0 +1,14 @@
+template(no-model)
+	require(from="./hello-world/hello-world as todo-list")
+	require(from="./pomodoro-clock/pomodoro-clock")
+	.init-app
+		todo-list
+		br
+		input(type="number" step="1" min="1" max="59" change.bind="this.minutes" placeholder="minutes")
+		p
+			pomodoro-clock(
+				primary-color="#43c6ac" 
+				secondary-color="#191654"
+				minutes="${this.minutes||0}"
+				seconds="15"
+			)
