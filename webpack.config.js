@@ -1,5 +1,6 @@
 var path = require('path');
 module.exports = {
+	mode:'development',
     entry: {    
     	app:['ferrugemjs/bootstrapper']
     },
@@ -13,7 +14,7 @@ module.exports = {
         port: 3333
     },
     module: {
-        loaders: [
+        rules: [
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
