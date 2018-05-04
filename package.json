@@ -1,6 +1,6 @@
 {
   "name": "test-webpack",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "css-loader": "^0.28.4",
     "extension-replace-loader": "0.0.1",
     "ferrugemjs": "0.22.0",
-    "ferrugemjs-loader": "0.24.0",
+    "ferrugemjs-loader": "0.30.2",
     "pug": "^2.0.0-rc.4",
     "pug-html-loader": "^1.1.5",
     "style-loader": "^0.18.2",
@@ -26,6 +26,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "ferrugemjs": "1.2.0"
+    "ferrugemjs": "1.3.1",
+    "v3rtigo": "0.2.5"
   }
 }
