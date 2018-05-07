@@ -1,8 +1,10 @@
 var path = require('path');
+var mode = 'development';
+// mode = 'production';
 module.exports = {
-	mode:'development',
+	mode,
     entry: {    
-    	app:['ferrugemjs/bootstrapper']
+    	app:['./app/main.js']
     },
     output: {
         path: __dirname+'/public', 
@@ -53,10 +55,8 @@ module.exports = {
     }
 	,resolve: {
 		extensions: [".js",".pug"]
-		,alias:{    		
-			"app":__dirname + '/app'
-			,"root_app":__dirname + '/app'
-			,"ferrugemjs":"ferrugemjs/dist/core"
-		}    
+		,alias:{
+			"@":__dirname + '/app'
+		}
 	}
 }

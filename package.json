@@ -6,7 +6,7 @@
   "scripts": {
     "copy:index": "copyfiles ./index.html public",
     "start": "npm run copy:index && webpack-dev-server --progress --colors",
-    "build": "npm run copy:index && webpack --config webpack.config.js"
+    "build": "npm run copy:index && webpack -p --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +17,7 @@
     "copyfiles": "^2.0.0",
     "css-loader": "0.28.10",
     "extension-replace-loader": "0.0.1",
-    "ferrugemjs-loader": "0.30.0",
+    "ferrugemjs-loader": "0.31.4",
     "node-sass": "4.7.2",
     "pug": "2.0.1",
     "pug-html-loader": "1.1.5",
@@ -28,6 +28,6 @@
     "webpack-dev-server": "3.1.1"
   },
   "dependencies": {
-    "ferrugemjs": "1.2.0"
+    "ferrugemjs": "1.5.1"
   }
 }
