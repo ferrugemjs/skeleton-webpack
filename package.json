@@ -14,6 +14,8 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
     "copyfiles": "^2.0.0",
     "css-loader": "0.28.10",
     "extension-replace-loader": "0.0.1",
@@ -25,7 +27,12 @@
     "style-loader": "0.20.3",
     "webpack": "4.1.1",
     "webpack-cli": "2.0.12",
-    "webpack-dev-server": "3.1.1"
+    "webpack-dev-server": "3.1.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0"
   },
   "dependencies": {
     "ferrugemjs": "1.5.1"

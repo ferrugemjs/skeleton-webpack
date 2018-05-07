@@ -1,0 +1,26 @@
+{
+	"extends": "standard",
+	"globals": {
+        "fetch": true
+    },
+	"rules": {
+		"max-line-length": {
+			"options": [220]
+		},
+		"eqeqeq": ["error", "always"],
+		"prefer-template": "error",
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"one-var": ["error", "never"],
+		"new-parens": "error",
+		"no-dupe-args": "error",
+		"no-bitwise": "error",
+		"no-cond-assign": "error",
+		"no-multiple-empty-lines": "error",
+		"eol-last":["error", "never"],
+		"keyword-spacing":["error", {"before": true, "after": true}],
+		"comma-spacing":["error", {"before": false, "after": true}],
+		"space-before-function-paren":["error", "never"],
+		"space-before-blocks":["error", "never"]
+	}
+}
