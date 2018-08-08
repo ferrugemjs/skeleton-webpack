@@ -19,7 +19,7 @@
     "copyfiles": "^2.0.0",
     "css-loader": "0.28.10",
     "extension-replace-loader": "0.0.1",
-    "ferrugemjs-loader": "0.31.4",
+    "ferrugemjs-loader": "0.34.0",
     "node-sass": "4.7.2",
     "pug": "2.0.1",
     "pug-html-loader": "1.1.5",
@@ -35,6 +35,6 @@
     "eslint-plugin-standard": "^3.1.0"
   },
   "dependencies": {
-    "ferrugemjs": "1.5.1"
+    "ferrugemjs": "1.7.0"
   }
 }
