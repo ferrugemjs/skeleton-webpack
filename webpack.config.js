@@ -17,23 +17,23 @@ module.exports = {
 				exclude: /node_modules/,
 				loader: 'babel-loader',
 				query: {
-					presets: ['es2015']
+					presets: ['env']
 				}
 			}
-			,{ test: /\.css$/, loader: "style!css" }
+			,{ test: /\.css$/, loader: 'style!css' }
 			,{
         		test: /\.pug$/,
         		loaders: [
 							{
 								loader: 'babel-loader',
 								query: {
-									presets: ['es2015']
+									presets: ['env']
 								}	
 							}
 	        				,{ 
 	        					loader:'ferrugemjs-loader'
 	        					,options:{
-									templateExtension:".pug"
+									templateExtension:'.pug'
 								} 
 							}
 	        				,'pug-html-loader'
@@ -42,11 +42,9 @@ module.exports = {
 		]
     }
 	,resolve: {
-		extensions: [".js",".pug"]
-		,alias:{    		
-			"app":__dirname + '/app'
-			,"root_app":__dirname + '/app'
-			,"ferrugemjs":"ferrugemjs/dist/core"
+		extensions: ['.js','.pug']
+		,alias:{
+			'@': path.resolve(__dirname, './app')
 		}    
 	}
 }

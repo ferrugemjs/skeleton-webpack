@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "copy:index": "copyfiles ./index.html public",
-    "start": "npm run copy:index && webpack-dev-server --progress --colors",
+    "watch": "npm run copy:index && webpack-dev-server --progress --colors",
     "build": "npm run copy:index && webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-preset-env": "^1.7.0",
     "copyfiles": "^2.0.0",
     "css-loader": "^0.28.4",
     "extension-replace-loader": "0.0.1",
     "ferrugemjs": "1.7.0",
-    "ferrugemjs-loader": "0.34.0",
+    "ferrugemjs-loader": "0.36.0",
     "pug": "^2.0.0-rc.4",
     "pug-html-loader": "^1.1.5",
     "style-loader": "^0.18.2",
@@ -26,7 +26,7 @@
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
-    "ferrugemjs": "1.3.1",
-    "v3rtigo": "0.3.0"
+    "ferrugemjs": "1.7.0",
+    "v3rtigo": "0.5.2"
   }
 }
